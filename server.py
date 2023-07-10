@@ -31,7 +31,7 @@ def page():
   
   arr=model.predict([[swidth,sheight,pwidth,pheight]])
 
-  return render_template("index.html", data=str(arr[0]))
+  return data=str(arr[0])
 
 
 if __name__ == '__main__':
