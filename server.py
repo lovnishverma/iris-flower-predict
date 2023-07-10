@@ -10,7 +10,7 @@ app=Flask(__name__)
 def iris():
   return render_template("index.html")
 
-@app.route('/irisf',methods=["POST"])
+@app.route('/irisf', methods=["POST"])
 def page():
   swidth=eval(request.form.get("swidth"))
   sheight=eval(request.form.get("sheight"))
