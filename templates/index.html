@@ -4,7 +4,7 @@
   </head>
 <body>
 
-<form action="/irisf" metho="post">
+<form action="/irisf" method="POST">
   <table class="table table-striped trans" align="center">
     
     <div class="row">
@@ -46,9 +46,17 @@
 
   
   
-  <div> The Flower Name is: </div>
-  <div align="center">{{data}}  </div>
-   
+ <div> The Flower Name is: </div>
+     <div align="center"> {{data}} </div>
+     <center>
+     {% if data=="Iris-setosa" %}
+        <img src="https://cdn.glitch.global/8599b2d2-58ab-4d42-98f5-97fa4c6bad04/Iris%20Setosa.png?v=1680866840563" alt="IRIS SETOSA" width="200" height="200">
+     {% elif data=="Iris-versicolor" %}
+        <img src="https://cdn.glitch.global/8599b2d2-58ab-4d42-98f5-97fa4c6bad04/Iris%20versicolor.png?v=1680866854461" alt="IRIS VERSICOLOR" width="200" height="200">
+     {% elif data=="Iris-virginica" %}
+        <img src="https://cdn.glitch.global/8599b2d2-58ab-4d42-98f5-97fa4c6bad04/Iris%20Virginica.png?v=1680866857022" alt="IRIS VIRGINICA" width="200" height="200">
+     {% endif %}
+     </center>
 
 </body>
 </html>
