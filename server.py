@@ -17,7 +17,7 @@ def page():
   pwidth=eval(request.form.get("pwidth"))
   pheight=eval(request.form.get("pheight"))
   
-  url="https://raw.githubusercontent.com/sarwansingh/Python/master/ClassExamples/data/iris.csv"
+  url="https://raw.githubusercontent.com/lovnishverma/datasets/main/iris.csv"
   
   data=pd.read_csv(url, header=None)
   flower=data.values
